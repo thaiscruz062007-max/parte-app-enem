@@ -24,6 +24,8 @@ def load_data():
     # Altere o caminho do arquivo conforme a localização no seu repositório do GitHub
     # Exemplo: 'df_2014-2019.csv' ou 'data/df_2014-2019.csv'
     data = pd.read_csv('df_2014-2019.csv')
+    st.subheader("Visualização dos Dados")
+    st.dataframe(df.head(25))
     
     # Seleção de colunas via iloc para evitar problemas com UTF-8
     medias_uf = data.iloc[:, [0, 1, 59]].copy()
