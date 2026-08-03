@@ -1,7 +1,1 @@
-import streamlit as st
-
-
-st.title("Em que medida a centralização urbana e a infraestrutura docente escolar determinam as disparidades de desempenho no ENEM?")
-
-
-st.write("Análise das disparidades de desempenho no ENEM em relação à estrutura e centralização urbana.")
+st.latex(r"Y_i = \beta_0 + \beta_1 X_i + \epsilon_i")
