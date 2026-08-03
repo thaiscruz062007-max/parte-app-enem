@@ -49,7 +49,8 @@ try:
     medias_uf, media_espaco, media_docentes = load_data()
     medias_uf_grouped = associateUf(medias_uf)
     st.subheader("Visualização dos Dados")
-    st.dataframe(df.head(25))
+    st.dataframe(medias_uf.head(25))
+
     # ---------------------------------------------------------------------------------------#
     # Seção 1: Desempenho Médio por UF (Gráfico Interativo)
     # ---------------------------------------------------------------------------------------#
